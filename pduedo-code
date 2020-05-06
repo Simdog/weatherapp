@@ -1,0 +1,63 @@
+This is a Weather app that has to be able to display whatever city you are searching and show their name, date, temperature, 5 day forecast, humidity, wind speed, uv index
+Also the app has to save previous searches and create a list of them 
+it also has to be able to work dynamically with html and css
+
+Search function {
+    History of searches
+        When click on city
+        display current and future weather conditions for that city 
+
+    present current condition for city
+        city- 
+            city.name
+        list
+            hourly.dt
+            current.temp
+            current.wind_speed
+            current.uvi
+            current.humidity
+        forecast
+            forecast.humidity.unit
+            forecast.symbol
+        
+    present future conditions for city
+    presented with the city
+        name
+        date
+        future weather conditions
+            5 day forecast
+            the date
+            icon representation of weather conditions
+        temperature
+        humidity
+        wind speed
+        UV index
+            when i view UV index
+            shows color that indicates weather condition whether they are 
+                favorable
+                moderate
+                severe
+    
+Storage function
+    Save list of previous searches
+    Save last searched city for when you reopen browser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
