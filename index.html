@@ -1,81 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"   
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Weather Dashboard</title>
-</head>
-<body>
-    <nav class="navbar navbar-light bg-dark">
-        <span id="navigation" class="navbar-brand mb-0 h1">Weather Dashboard</span>
-      </nav>
-      <div>
-        <div class="row">
-            <div class="col-sm-3">
-                <!--This is where they are entering their searches-->
-                <form id="searchContainer" class="form-inline">
-                    <input id="searchInput" data-city="" class="form-control mr-sm-2" type="search" placeholder="Search for City" aria-label="Search">
-                    <!-- This is where they are clicking the button to search-->
-                    <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-                  <!-- This will be where all the searches are collected and listed-->
-                  <div id="listInput" >
-                      1 of 2 
-                      
-                  </div>
-              
-            </div>
-            <div class="col">
-                <!--This will display the current search input-->
-                <div id = displayInput class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                        <!--Display city name and date-->
-                      <h1 id="cityName" class="display-4">City Name</h1>
-                      <hr>
-                      <!--This div contains the information about city-->
-                      <div>
-                          <p id="temperature" >°F</p>
-                          <p id="humidity">%</p>
-                          <p id="wind">MPH</p>
-                          <p id="indexUV">UV Index</p>
-                      </div>
-                      
-                    </div>
-                  </div>
-                  <div class="row">
-                    <!-- Card one for weather display -->
-                    <div id="display-1" class="col">
-                      1 of 2
-                    </div>
-                    <!-- card 2 for weather display -->
-                    <div id="display-2" class="col">
-                      1 of 2
-                    </div>
-                    <!-- card 3 for weather display -->
-                    <div id="display-3" class="col">
-                      1 of 2
-                    </div>
-                    <!-- card 4 for weather display-->
-                    <div id="display-4" class="col">
-                      1 of 2
-                    </div>
-                    <!-- card 5 for weather display-->
-                    <div id="display-5" class="col">
-                      1 of 2
-                    </div>
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-dark">
+      <span id="navigation" class="navbar-brand mb-0 h1"
+        >Weather Dashboard</span
+      >
+    </nav>
+    <div>
+      <div class="row">
+        <div class="col-sm-3">
+          <!--This is where they are entering their searches-->
+          <form id="searchContainer" class="form-inline">
+            <input
+              id="searchInput"
+              data-city=""
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search for City"
+              aria-label="Search"
+            />
+            <!-- This is where they are clicking the button to search-->
+            <button
+              id="searchBtn"
+              class="btn btn-outline-success my-2 my-sm-0"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+          <!-- This will be where all the searches are collected and listed-->
+          <div data-name="" id="listInput">
+            
+            
+          </div>
+        </div>
+        <div class="col">
+          <!--This will display the current search input-->
+          <div id="displayInput" class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <!--Display city name and date-->
+              <div id="title" >
+                <h1 id="cityName" >City Name
+                  
+              </h1><img id="weatherIcon"  alt="weather icon">
+              </div>
+              
+              <hr />
+              <!--This div contains the information about city-->
+              <div id="displayInfo">
+                <p id="temperature">°F</p>
+                <p id="humidity">%</p>
+                <p id="wind">MPH</p>
+                <p id="indexUV">UV Index</p>
+              </div>
             </div>
           </div>
 
+
+
+          <div class="container putaway" class="row">
+            <h3>
+              5 day forecast
+            </h3>
+            
+          </div>
+          <br>
+          <div class="row putaway">
+            <!-- Card one for weather display -->
+
+            <div id="display-0" class="col-sm-2">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title date-0">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><img id="img-0" src="" alt=""> </h6>
+                  <p class="card-text temp-0">Temperature:</p>
+                  <p class="card-text humid-0">Humidity:</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 2 for weather display -->
+            <div id="display-8" class="col-sm-2">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title date-8 ">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><img id="img-8" src="" alt=""> </h6>
+                  <p class="card-text temp-8">Temperature:</p>
+                  <p class="card-text humid-8">Humidity:</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 3 for weather display -->
+            <div id="display-16" class="col-sm-2">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title date-16">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><img id="img-16" src="" alt=""> </h6>
+                  <p class="card-text temp-16">Temperature:</p>
+                  <p class="card-text humid-16">Humidity:</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 4 for weather display-->
+            <div id="display-24" class="col-sm-2">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title date-24">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><img id="img-24" src="" alt=""> </h6>
+                  <p class="card-text temp-24">Temperature:</p>
+                  <p class="card-text humid-24">Humidity:</p>
+                </div>
+              </div>
+            </div>
+            <!-- card 5 for weather display-->
+            <div id="display-32" class="col-sm-2">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title date-32">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><img id="img-32" src="" alt=""> </h6>
+                  <p class="card-text temp-32">Temperature:</p>
+                  <p class="card-text humid-32">Humidity:</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
       </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="script.js"></script>   
-      
-    
-</body>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

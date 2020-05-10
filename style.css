@@ -2,6 +2,7 @@ body {
   width: auto;
   margin-left: auto;
   margin-right: auto;
+  background-color: darkgrey;
 }
 
 .navbar {
@@ -16,4 +17,75 @@ body {
 #navigation {
   color: white;
 
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.orange {
+  background-color: orange;
+}
+
+#listInput {
+  margin: 30px;
+  border: solid seashell;
+  background-color: seashell;
+}
+
+
+.card-body {
+  background-color: rgba(0, 88, 129, 0.637);
+  color: white;
+}
+.card-body:hover {
+  
+  color: white;
+  background-color: lightblue;
+  justify-content: center;
+  transition: 2s;
+  zoom: 110%;
+}
+
+#displayInput {
+  background-color: lightblue;
+  padding-right: 20px;
+}
+
+.newlist {
+  background-color: black;
+  border: solid whitesmoke;
+  padding: 20px;
+  color: white;
+
+}
+.newlist:hover {
+  transition: 0.3s;
+  background-color: lightblue;
+  padding: 30px;
+}
+
+#searchInput {
+  margin-left: 35px;
+}
+
+/* #title {
+  display: inline;
+  position: relative;
+
+} */
+
+#weatherIcon {
+  position: absolute;
+  margin-left: 22%;
+  /* left: 500px;
+  top: 10px; */
 }
