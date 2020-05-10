@@ -44,7 +44,6 @@ function weatherApp () {
             p.on("click", function(e){
                 var newAttr = $(this).attr("data-name");
                 $("#searchInput").val(newAttr);
-                console.log(newAttr, "ciaciaciacia");
 
 
 
@@ -118,7 +117,7 @@ function uvIndex(uv1, uv2) {
                 $("a").addClass("orange");
 
 
-            } else if ( uIndex >= 8) {
+            } else if ( uIndex > 8) {
                 $("a").addClass("red");
 
 
